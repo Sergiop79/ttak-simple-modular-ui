@@ -1,0 +1,99 @@
+// ============================================================
+// Global Configutation
+// ============================================================
+
+// Font Stack
+
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700';
+$font-family--primary    : 'Roboto', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+
+$font-weight--thin        : 100;
+$font-weight--light       : 300;
+$font-weight--medium      : 500;
+$font-weight--bold        : 700;
+$font-weight--ultra-bold  : 900;
+
+
+// Descriptive Base Colors
+
+$white  : #fff;
+$black  : #0f0f0f;
+$grey   : #797e83;
+
+$st-tropaz        : #284A90;
+$mountain-meadow  : #14B694;
+$crimsom          : #CF1332;
+$zest             : #E58824;
+$blue-marguerite  : #7C71C5;
+
+// Color Usage
+
+$color-primary: $st-tropaz;
+//$color-secondary
+//$color-accent
+$color-shadow: rgba($black, 0.2);
+
+
+// Color Palette Modifiers
+
+$color-palettes: (
+  grey: (
+    xx-light: lighten($grey, 43%),
+    x-light: lighten($grey, 35%),
+    light: lighten($grey, 12%),
+    base: $grey,
+    dark: darken($grey, 8%),
+    x-dark: darken($grey, 16%)
+  ),
+  black: (
+    light: lighten($black, 10%),
+    base: $black,
+    dark: darken($black, 10%)
+  )
+);
+
+
+// UI Colors
+
+$ui-colors: (
+  default  : $st-tropaz,
+  success  : $mountain-meadow,
+  error    : $crimsom,
+  warning  : $zest,
+  info     : $blue-marguerite
+);
+
+// Text
+
+$base__font-size  : 16px;
+$base__line       : 24px;
+$letter-space     : 1px;
+
+// Border radius
+
+$br--default  : 0.4em;
+$br--round    : 50%;
+
+//Transitions
+
+$trns-duration: 0.3s;
+
+// Path to assets
+
+$img-path: '../img';
+
+// Grid
+
+$g-col-width     : 65px !default;
+$g-gutter-width  : 20px !default;
+$g-col-count     : 12 !default;
+$g-cont-max-w    : 1050px !default;
+
+// Breakpoints
+
+$bp--sm: 1px;
+$bp--md: 768px;
+$bp--lg: 1100px;

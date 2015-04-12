@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ttak | Simple modular UI kit</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+  <body>
+   <div class="grid">
+    <header class="grid__col--12 panel--padded--centered" role="banner">
+      <a href="#" class="site-logo">
+        <b class="srt">Ttak a simple modular UI kit</b>
+      </a>
+      <nav class="navbar" role="navigation">
+        <span id="toggle" class="icn--nav-toggle is-displayed-mobile">
+          <b class="srt">Toggle</b>
+        </span>
+        <ul class="nav is-collapsed-mobile">
+          <li class="nav__item"><a href="#type">Typography</a>
+          </li>
+          <li class="nav__item"><a href="#buttons">Buttons</a>
+          </li>
+          <li class="nav__item"><a href="#forms">Forms</a>
+          </li>
+          <li class="nav__item"><a href="#images">Images</a>
+          </li>
+          <li class="nav__item"><a href="#grid">Grid</a>
+          </li>
+          <li class="nav__item--current"><a href="#nav">Navigation</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+   </div>
+
+    <div class="grid is-hidden-mobile">
+      <div class="grid__col--12">
+        <img src="img/hero.png" alt="Ttak a simple modular UI kit" class="img--hero">
+      </div>
+    </div>
+
+    <h4 id="type" class="grid">Typography</h4>
+
+    <div class="grid">
+      <div class="centered grid__col--8">
+        <h1 class="headline-primary--grouped">This is an Awesome headline</h1>
+        <h2 class="headline-secondary--grouped">Take a look to the subtitle too</h2>
+        <p>This is a typical paragraph for the UI kit. <a href="#">This is a link where you could click</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis et quaerat nobis voluptatibus tempore officiis assumenda asperiores suscipit vel enim corrupti illum illo, quod porro molestias, eum commodi pariatur? Soluta! <em>I enjoy using italics as well from time to time</em>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus ipsum deserunt libero, rem ut sunt tenetur magni vero voluptatum eaque totam quisquam perspiciatis nam, temporibus, non quibusdam nostrum expedita iste!</p>
+        <blockquote>
+          Always be yourself, express yourself, have faith in yourself, do not go out and look for a successful personality and duplicate it.
+          <p>Bruce Lee</p>
+        </blockquote>
+      </div>
+    </div>
+
+    <h4 id="buttons" class="grid">Buttons</h4>
+
+    <div class="grid">
+      <div class="grid__col--12">
+        <a class="btn--default" href="#">Button Default</a>
+        <a class="btn--success" href="#">Button Success</a>
+        <a class="btn--error" href="#">Button Error</a>
+        <button class="btn--warning">Button Warning</button>
+        <button class="btn--info">Button Info</button>
+      </div>
+    </div>
+
+
+
+    <h4 id="forms" class="grid">Form Elements</h4>
+
+    <div class="grid">
+     <div class="grid__col--7">
+      <form action="#">
+        <label class="form__label--hidden" for="name">Name:</label>
+        <input class="form__input" type="text" id="name" placeholder="Name">
+
+        <label class="form__label--hidden" for="email">Email:</label>
+        <input class="form__input" type="text" id="email" placeholder="email@website.com">
+
+        <label class="form__label--hidden" for="message">Message:</label>
+        <textarea class="form__input" id="message" placeholder="Message" rows="7"></textarea>
+
+        <input class="btn--default" type="submit" value="submit">
+        <input class="btn--warning" type="reset" value="Reset">
+      </form>
+     </div>
+
+      <div class="grid__col--4">
+        <img class="img--avatar" src="img/avatar.png" alt="user avatar">
+
+        <form action="#">
+          <label class="form__label--hidden" for="username">Username:</label>
+          <input class="form__input" type="text" id="username" placeholder="username">
+
+          <label class="form__label--hidden" for="password">Password:</label>
+          <input class="form__input" type="text" id="password" placeholder="Password">
+
+          <input class="form__btn" type="submit" value="Login">
+        </form>
+      </div>
+    </div>
+
+
+    <h4 id="images" class="grid">Images</h4>
+
+    <div class="grid">
+      <div class="grid__col--5">
+        <img src="img/blue-moon.png" alt="sample image">
+      </div>
+      <div class="grid__col--5">
+        <img class="img--wrap" src="img/blue-moon.png" alt="sample image">
+      </div>
+      <div class="grid__col--2">
+        <img class="img--avatar" src="img/avatar.png" alt="sample image">
+      </div>
+    </div>
+
+
+
+    <h4 id="grid" class="grid">Grid System</h4>
+
+    <div class="theme__ttak">
+      <div class="grid">
+        <div class="grid__col--12">.grid__col--12</div>
+      </div>
+      <div class="grid">
+        <div class="grid__col--6">.grid__col--6</div>
+        <div class="grid__col--6">.grid__col--6</div>
+      </div>
+      <div class="grid">
+        <div class="grid__col--4">.grid__col--4</div>
+        <div class="grid__col--4">.grid__col--4</div>
+        <div class="grid__col--4">.grid__col--4</div>
+      </div>
+      <div class="grid">
+        <div class="grid__col--3">.grid__col--3</div>
+        <div class="grid__col--3">.grid__col--3</div>
+        <div class="grid__col--3">.grid__col--3</div>
+        <div class="grid__col--3">.grid__col--3</div>
+      </div>
+      <div class="grid">
+        <div class="grid__col--5">.grid__col--5</div>
+        <div class="grid__col--7">.grid__col--7</div>
+      </div>
+      <div class="grid">
+        <div class="grid__col--8">.grid__col--8</div>
+        <div class="grid__col--4">.grid__col--4</div>
+      </div>
+      <div class="grid">
+        <div class="centered grid__col--7">.centered .grid__col--7</div>
+      </div>
+    </div>
+
+    <h4 id="nav" class="grid">Navigation</h4>
+
+    <nav role="navigation" class="grid">
+      <ul class="nav grid__col--12">
+        <li class="nav__item"><a href="#">Nav Link 1</a></li>
+        <li class="nav__item"><a href="#">Nav Link 2</a>
+        <li class="nav__item--current"><a href="#">Nav Current</a></li>
+      </ul>
+    </nav>
+
+    <h4 class="grid">Footer</h4>
+
+    <footer class="grid" role="contentinfo">
+     <div class="grid__col--12 panel--padded--centered">
+      <a href="#" class="site-logo">
+      </a>
+      <p>A simple modular UI</p>
+      <p>Code &amp; design by <a href="https://twitter.com/sergixnet">Sergio Pe&ntilde;a</a></p>
+     </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

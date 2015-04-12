@@ -1,0 +1,34 @@
+// =============================================================================
+// Ttak Theme Styles
+// =============================================================================
+
+// Grid display background colors
+
+$ttak-grid: (
+	grid__col--12 : #DEF4E5,
+	grid__col--8  : #DCE0F2,
+	grid__col--7  : #DCF0EF,
+	grid__col--6  : #FFE3DB,
+	grid__col--4  : #F8EDD0,
+	grid__col--5  : #EAEBEC,
+	grid__col--2  : #C5E2CE,
+	grid__col--3  : #D6EEF5
+);
+
+// Generate Ttak grid display classes
+
+@each $value, $color in $ttak-grid {
+	.theme__ttak .#{$value} {
+		background-color: $color;
+	}
+}
+
+// Ttak grid columns display
+
+.theme__ttak {
+  .grid [class*=grid__col] {
+    font-weight: $font-weight--light;
+    margin-bottom: em(16px);
+    padding: em(10px);
+  }
+}

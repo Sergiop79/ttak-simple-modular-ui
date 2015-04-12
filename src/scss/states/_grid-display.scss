@@ -1,0 +1,18 @@
+// ============================================================
+// Grid display
+// ============================================================
+
+.is-displayed-mobile {
+  @include mq(small) {
+    display: block;
+  }
+  @include mq(medium) {
+    display: none;
+  }
+}
+
+.is-hidden-mobile {
+  @include mq(small) {
+    display: none;
+  }
+}
